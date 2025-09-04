@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja De Vida</title>
+</head>
+<body>
+    <header>
+        <h1>Jorge Luis Sarabia Hoyos</h1>
+        <img src="img/foto.jpg" alt="" width="20%" height="20%">
+    </header>
+
+    <nav>
+        <a href="#header">Inicio</a>
+        <a href="#about-me">Información Básica</a>
+        <a href="#academic-info">Información Académica</a>
+        <a href="#contact">Contáctenos</a>
+        <a href="#footer">Redes Sociales</a>
+    </nav>
+
+    <section id="about-me">
+        <h2>Información Básica</h2>
+        <ul>
+            <li><b>Nombre Completo:</b> Jorge Luis Sarabia Hoyos</li>
+            <li><b>Fecha y lugar de Nacimiento:</b> 24/12/2004, Barranquilla - Atlántico</li>
+            <li><b>Ciudad de Residencia:</b> Sahagún - Córdoba</li>
+            <li><b>Teléfono:</b> 3234189052</li>
+            <li><b>Correo Electrónico:</b> sarabia241630@gmail.com</li>
+            <li><b>Número de documento:</b> 1043124476</li>
+        </ul>
+    </section>
+
+    <section id="academic-info">
+        <h2>Información Académica</h2>
+        <h3>Educación Básica</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Institución</th>
+                    <th>Grados Cursados</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Inst. Edu. Bajo Grande</td>
+                    <td>1°, 2°, 3°, 4°</td>
+                </tr>
+                <tr>
+                    <td>Inst. Edu. San José</td>
+                    <td>5°, 6°</td>
+                </tr>
+                <tr>
+                    <td>Inst. Edu. Bajo Grande</td>
+                    <td>7°, 8°</td>
+                </tr>
+                <tr>
+                    <td>Inst. Edu. El Nacional Sede Las Mercedes</td>
+                    <td>9°</td>
+                </tr>
+                <tr>
+                    <td>Inst. Edu. Bajo Grande</td>
+                    <td>10°, 11°</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Educación Superior</h3>
+        <ul>
+            <li><b>Entidad:</b> Servicio Nacional de Aprendizaje (SENA)</li>
+            <li><b>Nivel:</b> Técnico</li>
+            <li><b>Programa:</b> Producción Agropecuaria</li>
+            <li><b>Estado:</b> Finalizado</li>
+            <li><b>Año de Finalización:</b> 2021</li>
+        </ul>
+        <ul>
+            <li><b>Institución:</b> Universidad de Córdoba</li>
+            <li><b>Programa Académico:</b> Ingeniería de Sistemas</li>
+            <li><b>Estado:</b> Actualmente cursando</li>
+            <li><b>Semestres Aprobados:</b> 6</li>
+            <li><b>Año de Inicio:</b> 2022</li>
+        </ul>
+
+        <h2>Habilidades</h2>
+            <ul style="text-align: left; margin-left: 10px; font-family: 'Franklin Medium', 'Arial Narrow', Arial, sans-serif">
+                <li>Aprendizaje rápido</li>
+                <li>Dibujo</li>
+                <li>Trabajo en equipo</li>
+                <li>Programación en Java</li>
+                <progress value="70" max="100"></progress>
+                <li>Lenguaje SQL</li>
+                <progress value="70" max="100"></progress>
+                <li>Lenguaje Extranjero: Inglés</li>
+                <progress value="75" max="100"></progress>
+            </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contáctenos</h2>
+        <form action="mailto:sarabia241630@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Nombre:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+            <label for="email">Correo Electrónico:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+            <label for="telefono">Teléfono:</label><br>
+                <input type="tel" id="telefono" name="telefono"><br><br>
+            <label for="fecha">Fecha de Nacimiento:</label><br>
+                <input type="date" id="fecha" name="fecha"><br><br>
+            <label for="horario">Horario disponible para contacto:</label><br>
+                <input type="time" id="horario" name="horario"><br><br>
+            <label for="edad">Edad:</label><br>
+                <input type="number" id="edad" name="edad"><br><br>
+            <label for="genero">Género:</label><br>
+                <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="masculino">Masculino</label><br>
+                <input type="radio" id="femenino" name="genero" value="femenino">
+                    <label for="femenino">Femenino</label><br>
+                <input type="radio" id="otro" name="genero" value="otro">
+                    <label for="otro">Otro</label><br><br>
+            <label for="interes">Área de interés:</label><br>
+                <select id="interes" name="interes">
+                    <option value="desarrollo-web">Desarrollo Web</option>
+                    <option value="desarrollo-movil">Base de Datos</option>
+                    <option value="ciencia-datos">Redes</option>
+                    <option value="inteligencia-artificial">Inteligencia Artificial</option>
+                    <option value="otros">Otros</option>
+                </select><br><br>
+            <label for="preferencia">Preferencia de Contacto:</label><br>
+                <input type="checkbox" id="email-contacto" name="preferencia" value="email">
+                    <label for="email-contacto">Correo Electrónico</label><br>
+                <input type="checkbox" id="telefono-contacto" name="preferencia" value="telefono">
+                    <label for="telefono-contacto">Teléfono</label><br>
+                <input type="checkbox" id="whatsapp-contacto" name="preferencia" value="whatsapp">
+                    <label for="whatsapp-contacto">WhatsApp</label><br><br>
+            <label for="archivo">Adjuntar Archivo:</label><br>
+                <input type="file" id="archivo" name="archivo"><br><br>
+            <label for="url">URL o portafolio:</label><br>
+                <input type="url" id="url" name="url"><br><br>
+            <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje"></textarea><br><br>   
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </form>
+    </section>
+
+    <footer id="footer">
+        <a href="https://www.linkedin.com/in/sarabiaj">LinkedIn Profile</a><br>
+        <a href="https://github.com/SarabiaJ">GitHub Profile</a><br>
+        <a href="https://x.com/j2412sh">Twitter Profile</a><br>
+        <a href="https://www.instagram.com/sarabia_j24/">Instagram Profile</a><br>
+        <a href="https://web.facebook.com/frases.sentimentales.73">Facebook Profile</a><br>
+        <p>&copy; 2025 Mi Hoja de Vida. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

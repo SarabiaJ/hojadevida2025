@@ -53,6 +53,7 @@ header img {
 .topnav a:hover {
     background: #9dcbe5;
     color: #1b98e0;
+    border-radius: 10px;
 }
 
 /* ====== SECCIONES ====== */
@@ -146,10 +147,15 @@ input, select, textarea, button {
     font-size: 1rem;
 }
 
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
 input:focus, select:focus, textarea:focus {
     outline: none;
     border-color: #1b98e0;
-    box-shadow: 0 0 4px rgba(27,152,224,0.5);
+    box-shadow: 0 0 4px #1b98e080;
 }
 
 button {
